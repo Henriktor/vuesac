@@ -1,9 +1,8 @@
 <template>
     <div class="hello">
         <h1>{{ revMsg }}</h1>
-        <li><a href="https://cloud.diaspora.nu" target="_blank" rel="noopener">diaspora</a></li>
-        </ul>
-    </div>
+        
+      </div>
 </template>
 <script>
 export default {
@@ -21,6 +20,13 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+h1 {
+    margin: 2px 4px 21px;
+    
+    text-decoration: none;
+
+}
 h3 {
     margin: 40px 0 0;
 }
@@ -36,12 +42,15 @@ li {
 }
 
 a {
-    color: #42b983;
-    text-align: left;
+    color: #20b54a;
+    border-bottom: 10px
 }
 
 p {
     color: #42b981;
 
 }
+
+
+
 </style>

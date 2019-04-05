@@ -1,9 +1,9 @@
 <template>
     <div id="app">
         <img alt="Vue logo" src="./assets/logo.png">
-        <HelloWorld msg="Text text och mer" />
-        
-        <form v-on:submit.prevent="onSubmit" ><input type="text" ref="inputField" placeholder="Skriv här">
+        <a href="https://cloud.diaspora.nu" target="_blank" rel="noopener"><HelloWorld msg="diasporA" /></a>
+        <form v-on:submit.prevent="onSubmit" >
+        <input type="text" ref="inputField" placeholder="Skriv här">
         <button type="submit" value="Submit">Submit</button>
         </form>
         <HelloWorldRender v-bind:helloMsg="hello" />
@@ -43,6 +43,6 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 </style>
