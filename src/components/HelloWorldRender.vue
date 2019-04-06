@@ -9,7 +9,7 @@ export default {
     }
 
 }
-</script>b
+</script>
 <style scoped>
 
 h3 {

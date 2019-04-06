@@ -5,9 +5,10 @@
         <form v-on:submit.prevent="onSubmit" >
         <input type="text" ref="inputField" placeholder="Skriv här">
         <button type="submit" value="Submit">Submit</button>
+        <button type="submit" value="Submit">Reverse</button>
         </form>
         <HelloWorldRender v-bind:helloMsg="hello" />
-
+        <HelloWorld v-bind:msg="msg" />
     </div>
 </template>
 <script>
