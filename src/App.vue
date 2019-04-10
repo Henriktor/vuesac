@@ -1,15 +1,17 @@
 <template>
     <div id="app">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <form v-on:submit.prevent="onSubmit">
-            <ul class="form">
-                <li class="fourth first fullMobile">
-                <input type="text" ref="inputField" placeholder="Skriv här"></textarea></li>
-                <br>
-                <button type="submit" value="Submit">Submit</button>
-                <button type="submit" value="Submit">Reverse</button>
+        <main class="content">
+            <ul class="grid">
+                <img alt="Vue logo" src="./assets/logo.png" align="left">
+         </ul>
+            <ul class="wrap-menu">
+                <form v-on:submit.prevent="onSubmit">
+                    <input class="button" type="text" ref="inputField" placeholder="Skriv här">
+                    <button class="button" type="submit" value="Submit">Submit</button>
+                    <button class="button" type="submit" value="Submit">Reverse</button>
+                </form>
             </ul>
-        </form>
+        </main>
         <HelloWorldRender v-bind:helloMsg="hello" />
         <HelloWorld v-bind:msg="msg" />
     </div>
