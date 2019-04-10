@@ -1,0 +1,7 @@
+.button {
+    &{ float:left; font-family:FiraSans; font-weight:bold; font-size:12px; text-decoration:none !important; color:#000; cursor:pointer; padding:10px 14px; border:none; text-align:center; background:#47b72f38; }
+    &:hover { opacity:0.7; }
+    .fr {float:right;}
+    .disabled { cursor:default; opacity:0.3; }
+}
+  

@@ -1,0 +1,45 @@
+/*#################################*/
+/*### Grid */
+/*#################################*/
+main ul.grid { width:100%; float:left; margin:10px 0 -20px 0; }
+main ul.grid > li { list-style:none; float:left; margin:0 20px 20px 0; box-sizing:border-box; }
+main ul.grid > li > a { width:100%; float:left; text-decoration:none; cursor:pointer; }
+main ul.grid > li > a:hover { opacity:0.8; }
+main ul.grid > li > h3 { margin-top:0; }
+main ul.grid > li > a > h3, main ul.grid > li > a > h4 { margin-top:0; margin-bottom:0; }
+main ul.grid > li > a > p { margin-top:10px; min-height:60px; }
+main ul.grid.fourths > li { width:calc(24.54% - 10px); }
+main ul.grid.fourths > li:nth-child(4n+4) { margin-right:0; }
+main ul.grid.thirds > li { width:calc(32.96% - 10px); }
+main ul.grid.thirds > li:nth-child(3n+3) { margin-right:0; }
+main ul.grid.halfs > li { width:calc(50% - 10px); }
+main ul.grid.halfs > li:nth-child(2n+2) { margin-right:0; }
+
+main .content ul.grid > li { background:#eee; padding:20px; box-sizing:border-box; }
+main .content ul.grid > li img, main .content ul.grid > li .image { width:calc(100% + 40px); height:230px; float:left; margin:-20px -20px 20px -20px; -o-object-fit:cover; object-fit:cover; }
+
+main .content ul.grid > li table td { padding:2px 0; background:none; }
+main .content ul.grid > li table td:first-child { font-weight:bold; vertical-align:top; padding:0; }
+main .content ul.grid > li table td:last-child { text-align:right; vertical-align:top; }
+main .content ul.grid > li ul { width:100%; float:left; }
+main .content ul.grid > li ul li { width:100%; float:left; list-style:inside; }
+main .content ul.grid > li ul li.noResults { list-style:none; background:#e6e6e6; text-align:center; font-style:italic; color:#666; padding:60px 0; font-size:14px; }
+
+main .content ul.grid.clear > li { padding:0; background:none; margin-top:10px; }
+
+main .content ul.grid.fourths > li img, main .content ul.grid.fourths > li .image { height:160px; }
+
+
+
+
+
+
+
+/*#################################*/
+/*### Grid */
+/*#################################*/
+main ul.list { width:100%; float:left; margin-bottom:10px; }
+main ul.list > li { list-style:inside; float:left; width:33%; list-style:none; font-size:14px; }
+main ul.list > li::before { width:10px; height:10px; background:#999; float:left; content:""; margin:6px 10px 0 0; }
+main ul.list.halfs > li:nth-child(odd) { width:50%; }
+main ul.list.halfs > li:nth-child(even) { width:50%; }

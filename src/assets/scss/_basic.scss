@@ -1,0 +1,14 @@
+
+
+/*#################################*/
+/*### Basic */
+/*#################################*/
+
+body {
+    &{ font-family:MartelLight; overflow-y:scroll; }
+    &::before { width:32px; height:100%; position:fixed; background:#333; content:""; }
+    .ar { text-align:right; }
+    .wrapper { width:100%; min-height:100%; float:left; position:relative; }
+    .wrap-all { width:100%; min-height:100%; float:left; position:relative; }
+    .wrap-menu { width:100%; min-height:100%; float:left; }
+}
