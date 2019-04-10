@@ -1,11 +1,14 @@
 <template>
     <div id="app">
         <img alt="Vue logo" src="./assets/logo.png">
-        <a href="https://cloud.diaspora.nu" target="_blank" rel="noopener"><HelloWorld msg="diasporA" /></a>
-        <form v-on:submit.prevent="onSubmit" >
-        <input type="text" ref="inputField" placeholder="Skriv här">
-        <button type="submit" value="Submit">Submit</button>
-        <button type="submit" value="Submit">Reverse</button>
+        <form v-on:submit.prevent="onSubmit">
+            <ul class="form">
+                <li class="fourth first fullMobile">
+                <input type="text" ref="inputField" placeholder="Skriv här"></textarea></li>
+                <br>
+                <button type="submit" value="Submit">Submit</button>
+                <button type="submit" value="Submit">Reverse</button>
+            </ul>
         </form>
         <HelloWorldRender v-bind:helloMsg="hello" />
         <HelloWorld v-bind:msg="msg" />
@@ -28,22 +31,11 @@ export default {
         onSubmit() {
             // eslint-disable-next-line
             this.hello = this.$refs.inputField.value
-          },
         },
+    },
     components: {
         'HelloWorld': test,
         'HelloWorldRender': HelloWorldRender,
     }
 }
 </script>
-<style>
-#app {
-    
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 10px;
-}
-</style>
