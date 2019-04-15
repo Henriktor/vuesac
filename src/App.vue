@@ -1,9 +1,9 @@
 <template>
     <div id="app">
         <main class="content">
-            <ul class="grid">
-                <img alt="Vue logo" src="./assets/logo.png" align="left">
-         </ul>
+                <ul class="menu">
+                   <li class="wrap"><img alt="Vue logo" src="./assets/logo.png" align="left"></li>
+                </ul>
             <ul class="wrap-menu">
                 <form v-on:submit.prevent="onSubmit">
                     <input class="button" type="text" ref="inputField" placeholder="Skriv här">
