@@ -1,4 +1,3 @@
-
 <script>
 export default {
     props: {
@@ -6,12 +5,8 @@ export default {
     },
     render: function(createElement) {
 
-        return createElement('h3', this.helloMsg)
+        return createElement('p', this.helloMsg)
     }
 
 }
-</script>
-
-
-
-
+ </script>

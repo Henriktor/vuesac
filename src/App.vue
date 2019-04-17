@@ -2,7 +2,9 @@
     <div id="app">
         <main class="content">
                 <ul class="menu">
-                   <li class="wrap"><img alt="Vue logo" src="./assets/logo.png" align="left"></li>
+                     <li class="wrap">
+                        <img alt="Vue logo" src="./assets/logo.png" align="left">
+                    </li>
                 </ul>
             <ul class="wrap-menu">
                 <form v-on:submit.prevent="onSubmit">
@@ -10,16 +12,22 @@
                     <button class="button" type="submit" value="Submit">Submit</button>
                     <button class="button" type="submit" value="Submit">Reverse</button>
                 </form>
+                
+                    <table>
+                    
+                    </table>
+               
             </ul>
         </main>
+        <Storage :prop="data" />
         <HelloWorldRender v-bind:helloMsg="hello" />
         <HelloWorld v-bind:msg="msg" />
     </div>
 </template>
 <script>
-import test from './components/HelloWorld.vue'
-
-import HelloWorldRender from './components/HelloWorldRender.vue'
+import test from '@/components/HelloWorld.vue'
+import Storage from '@/components/Storage'
+import HelloWorldRender from '@/components/HelloWorldRender.vue'
 
 
 export default {
@@ -38,6 +46,7 @@ export default {
     components: {
         'HelloWorld': test,
         'HelloWorldRender': HelloWorldRender,
+        'Storage': Storage,
     }
 }
 </script>
